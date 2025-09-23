@@ -1,19 +1,21 @@
-export const level0 = {
+export const level2 = {
 
-    html: `
-    <h3>Level 0</h3> 
-    <p>do things to get to level 1</p>
+    html:`
+    <h3>Level 2</h3>
+    <p>do things to get to level 2</p>
+    <button>the wrong one</button>
+    <button>the wrong one</button>
     <button id="winner">the right one</button>
     <button>the wrong one</button>
-    `,
-    script: (ctx) => {
-        console.log('level 0 loaded')
+   `,
+   script: (ctx) => {
+        console.log('level 2 loaded')
         document.getElementById('winner').addEventListener('click', () => {
             alert('winner!')
-            // use the provided context to change level
             if (ctx && typeof ctx.setLevel === 'function' && typeof ctx.currentLevel === 'number') {
                 ctx.setLevel(ctx.currentLevel + 1)
             }
         })
-    }
+    }   
+
 } 
