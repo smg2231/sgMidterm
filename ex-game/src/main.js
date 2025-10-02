@@ -5,7 +5,8 @@ import { level2 } from "./levels/level2.js"
 const levels = {
   level0: level0,
   level1: level1,
-  level2: level2
+  level2: level2,
+  level3: level3
 };
 
 
